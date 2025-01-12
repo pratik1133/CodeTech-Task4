@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="styels.css">
+        <title>Chat Application</title>
+    </head>
+    <body>
+        <div class="container text-light my-5">
+            <h1 class="text-center text-light my-3">Chat with your friends!!</h1>
+
+            <div class="chat-rooms text-center mb-3 my-4">
+                <div class="my-3">Choose a chatroom:</div>
+                <button class="btn btn-outline-info text-center border mx-1" id="general">#general</button>
+                <button class="btn btn-outline-info text-center border mx-1" id="gaming">#gaming</button>
+                <button class="btn btn-outline-info text-center border mx-1" id="music">#music</button>
+            </div>
+
+            <hr>
+
+            <div class="chat-window">
+                <ul class="chat-list list-group"></ul>
+            </div>
+
+            <form class="new-chat my-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text text-light bg-success">Your message:</div>
+                    </div>
+
+                    <input type="text" id="message" class="form-control mx-1 rounded-3" placeholder="type your message here" required>
+
+                    <div class="input-group-append">
+                        <input type="submit" class="btn btn-outline-info border mx-1" value="send">
+                    </div>
+                </div>
+            </form>
+
+            <form class="new-name my-2">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text text-light bg-success">Update name:</div>
+                    </div>
+
+                    <input type="text" id="name" class="form-control mx-1 rounded-3" placeholder="enter your new name here" required>
+
+                    <div class="input-group-append">
+                        <input type="submit" class="btn btn-outline-info border mx-1" value="update">
+                    </div>
+                </div>
+
+                <div class="update-message text-center my-4 fs-5"></div>
+            </form>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.0.0-alpha0/date_fns.min.js" integrity="sha512-0kon+2zxkK5yhflwFqaTaIhLVDKGVH0YH/jm8P8Bab/4EOgC/n7gWyy7WE4EXrfPOVDeNdaebiAng0nsfeFd9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js""></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js""></script>
+        <script>
+            const firebaseConfig = {
+              apiKey: "AIzaSyA9el5BMqQl9R5JhAAz75f9poD58NPEwCI",
+              authDomain: "practice-cbc9b.firebaseapp.com",
+              projectId: "practice-cbc9b",
+              storageBucket: "practice-cbc9b.appspot.com",
+              messagingSenderId: "413960864621",
+              appId: "1:413960864621:web:7528e96d11b62993c85064",
+              measurementId: "G-JH7XP7E8TC"
+            };
+          
+            firebase.initializeApp(firebaseConfig);
+            const database = firebase.firestore();
+        </script>
+
+        <script src="chatroom.js"></script>
+        <script src="chatui.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
