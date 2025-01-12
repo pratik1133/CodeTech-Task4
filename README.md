@@ -12,9 +12,7 @@
 
 <h1>Real-Time Chat Application</h1>
 
-![arj7aqn5](https://github.com/user-attachments/assets/e52600cd-0009-4eea-8e76-1724081d359f)
-
-![image](https://github.com/user-attachments/assets/03dbda90-e179-4a9c-b770-26d2983477b3)
+![image](https://github.com/user-attachments/assets/c5083c94-8c33-463e-b717-bbee0808e93e)
 
 <h2>Objective</h2>
 
@@ -37,6 +35,8 @@ HTML5
 CSS3
 
 JavaScript
+
+React JS
 
 <h2>Conclusion</h2>
 
