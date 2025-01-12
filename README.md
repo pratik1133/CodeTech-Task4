@@ -12,7 +12,10 @@
 
 <h1>Real-Time Chat Application</h1>
 
-![image](https://github.com/user-attachments/assets/c5083c94-8c33-463e-b717-bbee0808e93e)
+![image](https://github.com/user-attachments/assets/77ba6685-402e-44fa-bdc5-08c4144880c1)
+
+<img width="932" alt="image" src="https://github.com/user-attachments/assets/66371747-daac-41da-9870-73e8b78ebfeb" />
+
 
 <h2>Objective</h2>
 
